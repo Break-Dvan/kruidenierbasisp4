@@ -1,7 +1,7 @@
 <?php
 //initialiseren
 define('HOST', 'localhost');
-define('DATABASE', 'kruidenier');
+define('DATABASE', 'kruidenierp4');
 define('USER', 'root');
 define('PASSWORD','H00rnb33ck');
 $dbconn='';

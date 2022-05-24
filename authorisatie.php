@@ -14,9 +14,9 @@ $query = "SELECT m.id, m.inlognaam, m.wachtwoord, r.naam FROM medewerker m
             where m.inlognaam='" . $inlognaam . "' and m.wachtwoord='" . $wachtwoord . "';";
 //$resultaat bepalen....
 $result = mysqli_query($dbconn, $query);
-
 //aantal records bepalen....
 $aantal = mysqli_num_rows($result);
+echo "AANTAL: $aantal<br>";
 if ($aantal == 1) {
     while ($row = mysqli_fetch_array($result)) {
         $rol = $row['naam'];

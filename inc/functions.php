@@ -67,5 +67,10 @@ function logImport($file, $user, $iUpdate, $iNew) {
                     values('.{$file}', '{$user}', {$iUpdate}, {$iNew});";
     $result = mysqli_query($dbconn, $qryInsertLog);
 }
+
+function getFileExtension($name) {
+    $n = strrpos($name, '.');
+    return ($n === false) ? '' : substr($name, $n+1);
+}
 ?>
 

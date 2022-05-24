@@ -5,7 +5,7 @@ include 'inc/header.php';
 echo '<header class="head">';
 // url voor handmatige voorraad...
 echo "<a href='product_new.php' class='btn-new'><i class='material-icons md-24'>add</i></a>";
-echo "<a href='voorraad_import.php' class='btn-new'><i class='material-icons md-24'>import_export</i></a>";
+echo "<a href='voorraad_import.php' class='btn-new'><i class='material-icons md-24'>file_upload</i></a>";
 
 
 //echo '<span class="material-icons-outlined">

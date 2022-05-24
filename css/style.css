@@ -19,7 +19,8 @@ body {
     margin: 10px;
 }
 #kassa {
-    background: url(../img/Kassasysteem.png) center no-repeat;
+    /*background: url(../img/Kassasysteem.png) center no-repeat;*/
+    background: url(../img/kassa.gif) center no-repeat;
 }
 #contact {
     background: radial-gradient(farthest-side at left top, red, yellow 80px, var(--primary1));

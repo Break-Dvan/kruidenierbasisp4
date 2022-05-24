@@ -103,10 +103,11 @@ function importCSV()
 {
 
 //    $filename = $_FILES["csvbestand"]["name"];
+    $extension = getFileExtension($_FILES["csvbestand"]["name"]);
     $filename = $_FILES['csvbestand']['tmp_name'];
     $fileInfo = pathinfo($filename);
     echo '<h2>Voorraad bijwerken</h2>';
-    if ($fileInfo['extension'] = 'csv' and $_FILES['csvbestand']['size'] > 0) { // importeren...
+    if ($extension == 'csv' and $_FILES['csvbestand']['size'] > 0) { // importeren...
         // bestand openen
         $importFile = fopen($filename, "r");
         $update = 0;
